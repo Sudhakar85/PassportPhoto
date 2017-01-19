@@ -1,0 +1,245 @@
+﻿
+
+{
+
+  "PhotoSize": [
+
+    {
+
+      "Text": "1.5 x 1.5 inch",
+
+      "Value": "1.5 x 1.5 inch"
+
+    },
+
+    {
+
+      "Text": "1.5 x 2.5 inch",
+
+      "Value": "1.5 x 2.5 inch"
+
+    },
+
+    {
+
+      "Text": "2 x 2 inch",
+
+      "Value": "2 x 2 inch"
+
+    },
+
+    {
+
+      "Text": "30 x 40 mm",
+
+      "Value": "30 x 40 mm"
+
+    },
+
+    {
+
+      "Text": "33 x 48 mm",
+
+      "Value": "33 x 48 mm"
+
+    },
+
+    {
+
+      "Text": "35 x 35 mm",
+
+      "Value": "35 x 35 mm"
+
+    },
+
+    {
+
+      "Text": "35 x 45 mm",
+
+      "Value": "35 x 45 mm"
+
+    },
+
+    {
+
+      "Text": "36 x 47 mm",
+
+      "Value": "36 x 47 mm"
+
+    },
+
+    {
+
+      "Text": "35 x 50 mm",
+
+      "Value": "35 x 50 mm"
+
+    },
+
+    {
+
+      "Text": "40 x 50 mm",
+
+      "Value": "40 x 50 mm"
+
+    },
+
+    {
+
+      "Text": "40 x 45 mm",
+
+      "Value": "40 x 45 mm"
+
+    },
+
+    {
+
+      "Text": "43 x 53 mm",
+
+      "Value": "43 x 53 mm"
+
+    },
+
+    {
+
+      "Text": "50 x 50 mm",
+
+      "Value": "50 x 50 mm"
+
+    },
+
+    {
+
+      "Text": "40 x 60 mm",
+
+      "Value": "40 x 60 mm"
+
+    },
+
+    {
+
+      "Text": "50 x 70 mm",
+
+      "Value": "50 x 70 mm"
+
+    }
+
+ ],
+
+  "FrameSize": [
+
+    {
+
+      "Text": "5 x 3.5",
+
+      "Value": "5 x 3.5"
+
+    },
+
+    {
+
+      "Text": "3.5 x 5",
+
+      "Value": "3.5 x 5"
+
+    },
+
+    {
+
+      "Text": "6 x 4",
+
+      "Value": "6 x 4"
+
+    },
+
+    {
+
+      "Text": "4 x 6",
+
+      "Value": "4 x 6"
+
+    },
+
+    {
+
+      "Text": "7 x 5",
+
+      "Value": "7 x 5"
+
+    },
+
+    {
+
+      "Text": "5 x 7",
+
+      "Value": "5 x 7"
+
+    },
+
+    {
+
+      "Text": "130 x 90 mm",
+
+      "Value": "130 x 90 mm"
+
+    },
+
+    {
+
+      "Text": "90 x 130 mm",
+
+      "Value": "90 x 130 mm"
+
+    },
+
+    {
+
+      "Text": "130 x 100 mm",
+
+      "Value": "130 x 100 mm"
+
+    },
+
+    {
+
+      "Text": "100 x 130 mm",
+
+      "Value": "100 x 130 mm"
+
+    },
+
+    {
+
+      "Text": "150 x 100 mm",
+
+      "Value": "150 x 100 mm"
+
+    },
+
+    {
+
+      "Text": "100 x 150 mm",
+
+      "Value": "100 x 150 mm"
+
+    },
+
+    {
+
+      "Text": "150 x 110 mm",
+
+      "Value": "150 x 110 mm"
+
+    },
+
+    {
+
+      "Text": "110 x 150 mm",
+
+      "Value": "110 x 150 mm"
+
+    }
+
+  ]
+
+}

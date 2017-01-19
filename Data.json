@@ -1,0 +1,75 @@
+﻿{
+  "PhotoSize": [
+    {
+
+      "Text": "2 x 2 inch",
+
+      "Value": "192x192"
+
+    }
+ ],
+
+  "FrameSize": [
+
+    {
+
+      "Text": "4 x 5.3",
+
+      "Value": "4x5.3"
+
+    },
+    {
+
+      "Text": "5 x 3.5",
+
+      "Value": "5x3.5"
+
+    },
+
+    {
+
+      "Text": "3.5 x 5",
+
+      "Value": "3.5x5"
+
+    },
+
+    {
+
+      "Text": "6 x 4",
+
+      "Value": "6x4"
+
+    },
+
+    {
+
+      "Text": "4 x 6",
+
+      "Value": "4x6"
+
+    },
+    {
+
+      "Text": "7 x 5",
+      "Value": "7x5"
+
+    },
+    {
+
+      "Text": "5 x 7",
+      "Value": "5x7"
+    },
+    {
+
+      "Text": "8 x 8",
+      "Value": "8x8"
+    },
+    {
+
+      "Text": "8 x 10",
+      "Value": "8x10"
+    }
+  ]
+
+}

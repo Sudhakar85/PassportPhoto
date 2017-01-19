@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Passportphoto-diy.com</title>
+    <meta charset=”UTF-8”>
+
+    <meta name="description" content="online USA \ India visa stamping or passport photo 2x2 editor. Convert 2x2 photo to 5x3.5,x4,4x6,7x5,5x7. Auto Enhance your photo and download the photo for printing in your local shop walmart or walgreen and cut the photo yourself" />
+    <meta name="keywords" content="photo, photos, identity, passport, ID, download, online, software, size, format, standard, free, height, width" />
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/2e1c5a1e36.js"></script>
+
+    <script src="//code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+    <!--<script src="script/passportphoto.js"></script>-->
+    <script src="script/fabric.js"></script>
+    <script src="script/canvas_resize.js"></script>
+
+    <script src="script/imageresize.js"></script>
+    <script src="script/imagefilter.js"></script>
+    <script src="script/main.js"></script>
+
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <!-- IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    <div id="fb-root"></div>
+
+    <header>
+        <div class="dvHeader">
+            <div class="heading">
+                <img alt="2x2 Passport Photo" width="400" height="100" src="images/logo.png" />
+            </div>         
+            <div class="topMenu">                
+                <div><a href="Contact.html">Contact</a></div>
+                <div><a href="Aboutus.html">About Us </a></div>
+            </div>
+
+        </div>
+    </header>
+    <div role="main" class="dvContent">
+        <article>
+            <section style="width:20%; display:block;float:left;">
+                <div class="menu" id="dvMenu">
+                    <nav>
+                        <div><a href="#upload" data-scroll="Tips">TIPS</a></div>
+                        <div><a href="#upload" data-scroll="upload">UPLOAD & CROP </a></div>
+                        <div><a href="#edit" data-scroll="edit"> BRIGHTNESS & CONTRAST</a></div>
+                        <div><a href="#enhance" data-scroll="enhance">ENHANCE</a></div>
+                        <div><a href="#print" data-scroll="print">DOWNLOAD</a></div>
+                    </nav>
+                </div>
+            </section>
+            <section style="width:60%;display:inline-block;float:left;" class="centerRow">
+                <div class="intro">
+                    <article>
+                        <p style="font-size:20px;">
+                            All the best for your visa stamping or passport processing… !!
+                        </p><p style="font-size:20px;">
+                            Just spend few minutes and <b>Do It Yourself….</b>
+                        </p>
+                    </article>
+                </div>
+                <div class="dvStepHolder" data-anchor="Tips">
+                    <div class="dvStep">Tips to take the photo</div>
+                    <div class="tips">
+                        <ul>
+                            <li> Take the photo in your mobile or digital camera which has atleast 5MB camera pixel  </li>
+                            <li> Take the photo with white background. use your office meeting room projector screen or white board  </li>
+                            <li> Make sure there is enough light in the room  </li>
+                            <li> Make sure there is no reflection or light shadow in the background </li>
+                        </ul>
+                        <div class="quote">
+                            <p>
+                                “There are no bad pictures; that's just how your face looks sometimes.”
+                            </p>
+                            <p>
+                                ― Abraham Lincoln
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dvStepHolder step1" data-anchor="upload">
+                    <div class="dvStep">Upload & Crop Photo</div>
+                    <div>
+                        Note : Maximum you can upload 5MB file size
+                    </div>
+                    <div>
+                        <input type="file" id="fileUpload" />
+                    </div>
+                    <div>
+                        <div style="width:100%;text-align:center;">
+                            <div style="display:inline-block;padding-right:10px;">
+                                <img src="images/2.x 2 layout.png" width="198" height="198" style="border:10px solid #d3d3d3;" alt="head position sample" />
+                            </div>
+                            <div style="display:inline-block;">
+                                <canvas id="canCrop" width="192" height="192" style="border:10px solid #d3d3d3;">
+                                    Your browser does not support the HTML5 canvas tag.
+                                </canvas>
+                            </div>
+                        </div>
+                        <div>
+                            <div id="btnZoomIn" class="dvButton" style="display:inline-block;margin-right:20px;"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+                            <div id="btnZoomOut" class="dvButton" style="display:inline-block;margin-right:20px;"><i class="fa fa-search-minus" aria-hidden="true"></i></div>
+                            <div id="btnCropPhoto" class="dvButton" style="display:inline-block;margin-right:20px;">Crop</div>
+                            <div id="btnCropReset" class="dvButton" style="display:inline-block;">Reset</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dvStepHolder step2" data-anchor="edit">
+                    <div class="dvStep">Change Brigntness & Contrast</div>
+
+                    <div class="dvContrast">
+                        <div class="dvleftside">
+                            <div>Change Brightness</div> <br />
+                            <div id="dvBrightness" style="margin-top:5px;width:200px;"></div>
+                            <div id="dvBrightnessAmount"></div>
+                        </div>
+                        <div class="dvRightside">
+                            <div>Change Contrast</div> <br />
+                            <div id="dvContrest" style="margin-top:5px;width:200px;"></div>
+                            <div id="dvContrastAmount"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <canvas id="canEdit" width="192" height="192" style="border:10px solid #d3d3d3;">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                    </div>
+                    <div id="btnBrightReset" class="dvButton" style="display:inline-block;">Reset</div>
+                </div>
+
+                <div class="dvStepHolder step3" data-anchor="enhance">
+                    <div class="dvStep">Enhance Photo</div>
+                    <div style="display:inline-block;">
+                        <div> <div style="display:inline-block;">Enhance Photo Gamma : </div> <div style="display:inline-block;" id="dvGameAmount"></div> </div>
+                        <div id="dvAutoEnhance" style="margin-top:5px;width:200px;"></div>
+                    </div>
+                    <div>
+                        <canvas id="canEnhance" width="192" height="192" style="border:10px solid #d3d3d3;">
+                            Your browser does not support the HTML5 canvas tag.
+                        </canvas>
+                    </div>
+                    <div id="btnEnhanceReset" class="dvButton" style="display:inline-block;">Reset</div>
+                </div>
+
+                <div id="dvStep4" class="dvStepHolder step4" data-anchor="print">
+                    <div class="dvStep">Preview & Download</div>
+
+                    <div class="printSize">
+                        <div>Print size : <select id="ddPrintSize"></select></div>
+                        <div id="dvPrintSize" style="margin-top:5px;width:200px; "></div>
+                        <div>
+                            <input type="checkbox" id="chkDrawLine" checked value="Y" /> DrawLine for Cutting
+                        </div>
+                    </div>
+                    <div style="margin-top:10px; margin-bottom:10px;">
+                        I am very bad in cutting the photo. So arranged the photo in different way to reduce the number of cutting.
+                    </div>
+                    <canvas id="canDrawImage" width="576" height="384" style="border:1px solid #d3d3d3;background-color:white;">
+                        Your browser does not support the HTML5 canvas tag.
+                    </canvas>
+
+                    <div>
+                        <a id="download" class="dvButton" download="empty.jpeg" style="width:150px;display:inline-block;">Download</a>
+                    </div>
+                    <div>
+                        <p style="font-size:20px;">
+                            All the best for your visa stamping or passport processing… !!
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+            <section style="width:20%;display:inline-block;float:right;">
+
+
+                <div class="dvRight">
+                    <div>
+                        Like and share if you like this free service
+                    </div>
+                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="box_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+                </div>
+            </section>
+        </article>
+    </div>
+
+    <div id="dvCanvasNotSupported" class="canvasNotSupported">
+        Sorry..!! .Your browser does not support the HTML5 canvas tag. Upgrade your brower to latest version.
+    </div>
+
+    <footer>
+
+        <div class="warnings">
+            Warning: Photos identities created through this site may not be used for administrative documents.
+            Learn about regulation of your country before use. You are solely responsible for any damages, direct or indirect, material or immaterial since they would cause, origin or foundation use of this website by you or anyone authorized by you to use this site.
+            The website disclaim all responsibility. By using this site, you declare to agree these terms of use.
+        </div>
+
+        <div class="footerlinks">
+            <div><a href="index.html">Print Photo</a></div>
+            <div>|</div>
+            <div><a href="Aboutus.html">About US</a></div>
+            <div>|</div>
+            <div><a href="Contact.html">Contact</a></div>
+        </div>
+        <div class="copyright">
+            <div><p>&copy; 2016 PassportPhoto-diy.com<p> </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
